@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asmara Wanita & Pria — Yang Paling Menyenangkan dan Tidak Menyenangkan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FBF4EC;
+    --cream-soft: #F7E9DE;
+    --ivory: #FFFBF6;
+    --burgundy: #4A1C2A;
+    --burgundy-soft: #6E2A3C;
+    --rose: #A8454E;
+    --rose-soft: #C9737B;
+    --gold: #B8935A;
+    --gold-soft: #D4B683;
+    --ink: #2E1A1F;
+    --muted: #7B5E63;
+    --line: rgba(184, 147, 90, 0.28);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.85;
+    font-size: 17px;
+    overflow-x: hidden;
+  }
+
+  /* Decorative background pattern */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 12% 18%, rgba(168, 69, 78, 0.05) 0, transparent 35%),
+      radial-gradient(circle at 88% 75%, rgba(184, 147, 90, 0.06) 0, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrap { position: relative; z-index: 1; }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 24px;
+    background:
+      linear-gradient(rgba(74, 28, 42, 0.55), rgba(74, 28, 42, 0.75)),
+      radial-gradient(circle at 30% 30%, #6E2A3C, transparent 60%),
+      radial-gradient(circle at 70% 70%, #4A1C2A, transparent 60%),
+      var(--burgundy);
+    color: var(--ivory);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before, .hero::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(212, 182, 131, 0.35);
+    border-radius: 50%;
+  }
+  .hero::before {
+    width: 600px; height: 600px;
+    top: -200px; right: -150px;
+  }
+  .hero::after {
+    width: 400px; height: 400px;
+    bottom: -120px; left: -100px;
+  }
+
+  .hero-inner { max-width: 820px; position: relative; z-index: 2; }
+
+  .hero .eyebrow {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    letter-spacing: 4px;
+    color: var(--gold-soft);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(42px, 7vw, 78px);
+    line-height: 1.08;
+    margin-bottom: 26px;
+    letter-spacing: 0.5px;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-soft);
+    font-weight: 500;
+  }
+
+  .hero .lede {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(18px, 2.2vw, 24px);
+    line-height: 1.7;
+    max-width: 640px;
+    margin: 0 auto 40px;
+    color: rgba(255, 251, 246, 0.92);
+  }
+
+  .hero-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 30px auto 36px;
+    color: var(--gold-soft);
+  }
+  .hero-divider span {
+    height: 1px; width: 60px;
+    background: var(--gold-soft);
+  }
+  .hero-divider .ornament { font-size: 22px; }
+
+  .hero-cta {
+    display: inline-block;
+    padding: 14px 38px;
+    border: 1px solid var(--gold-soft);
+    color: var(--ivory);
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    background: rgba(184, 147, 90, 0.08);
+  }
+  .hero-cta:hover {
+    background: var(--gold);
+    color: var(--burgundy);
+    border-color: var(--gold);
+    letter-spacing: 3px;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 30px; left: 50%;
+    transform: translateX(-50%);
+    color: var(--gold-soft);
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: pulse 2.2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.4; transform: translateX(-50%) translateY(0); }
+    50% { opacity: 1; transform: translateX(-50%) translateY(6px); }
+  }
+
+  /* ---------- NAV ---------- */
+  .toc {
+    background: var(--ivory);
+    border-bottom: 1px solid var(--line);
+    padding: 18px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 20px rgba(74, 28, 42, 0.05);
+  }
+  .toc-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+  }
+  .toc a {
+    color: var(--burgundy);
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 4px 0;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+  }
+  .toc a:hover {
+    color: var(--rose);
+    border-bottom-color: var(--gold);
+  }
+
+  /* ---------- SECTIONS ---------- */
+  section { padding: 90px 24px; position: relative; }
+
+  .container { max-width: 920px; margin: 0 auto; }
+  .container-wide { max-width: 1180px; margin: 0 auto; }
+
+  .section-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    text-align: center;
+    color: var(--gold);
+    letter-spacing: 6px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  h2.section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: clamp(32px, 5vw, 52px);
+    color: var(--burgundy);
+    text-align: center;
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+  h2.section-title em {
+    font-style: italic;
+    color: var(--rose);
+    font-weight: 500;
+  }
+
+  .section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 18px auto 50px;
+    color: var(--gold);
+  }
+  .section-divider span {
+    height: 1px; width: 80px;
+    background: var(--gold-soft);
+  }
+  .section-divider .ornament { font-size: 20px; }
+
+  .lead {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    line-height: 1.7;
+    text-align: center;
+    max-width: 740px;
+    margin: 0 auto 50px;
+    color: var(--burgundy-soft);
+    font-style: italic;
+  }
+
+  p.body-text {
+    margin-bottom: 22px;
+    color: var(--ink);
+  }
+
+  /* ---------- INTRO ---------- */
+  .intro-section {
+    background: linear-gradient(180deg, var(--cream) 0%, var(--cream-soft) 100%);
+  }
+
+  .intro-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(24px, 3vw, 32px);
+    line-height: 1.55;
+    color: var(--burgundy);
+    text-align: center;
+    max-width: 760px;
+    margin: 50px auto 30px;
+    padding: 0 20px;
+    position: relative;
+  }
+  .intro-quote::before, .intro-quote::after {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    color: var(--gold-soft);
+    line-height: 0;
+    position: relative;
+    top: 22px;
+    opacity: 0.6;
+  }
+  .intro-quote::before { content: "\201C"; margin-right: 6px; }
+  .intro-quote::after { content: "\201D"; margin-left: 6px; }
+
+  .intro-attribution {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 3px;
+    color: var(--gold);
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  /* ---------- TWO COLUMN CARDS ---------- */
+  .gender-block {
+    margin-bottom: 60px;
+    background: var(--ivory);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 50px 40px;
+    box-shadow: 0 12px 40px rgba(74, 28, 42, 0.06);
+    position: relative;
+  }
+  .gender-block::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px; height: 100%;
+    background: linear-gradient(180deg, var(--rose), var(--gold));
+  }
+  .gender-block.men::before {
+    background: linear-gradient(180deg, var(--burgundy), var(--gold));
+  }
+
+  .gender-head {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  .gender-symbol {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--rose), var(--rose-soft));
+    color: var(--ivory);
+    box-shadow: 0 6px 18px rgba(168, 69, 78, 0.3);
+  }
+  .gender-block.men .gender-symbol {
+    background: linear-gradient(135deg, var(--burgundy), var(--burgundy-soft));
+    box-shadow: 0 6px 18px rgba(74, 28, 42, 0.3);
+  }
+  .gender-head h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(26px, 3.5vw, 36px);
+    color: var(--burgundy);
+    font-weight: 600;
+    line-height: 1.1;
+  }
+  .gender-head .subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold);
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+
+  /* ---------- PLEASANT / UNPLEASANT SUB BLOCKS ---------- */
+  .sub-block {
+    margin-top: 36px;
+  }
+  .sub-block-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+  .sub-block-title .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .sub-block.pleasant .badge {
+    background: rgba(184, 147, 90, 0.15);
+    color: var(--gold);
+    border: 1px solid var(--gold-soft);
+  }
+  .sub-block.unpleasant .badge {
+    background: rgba(168, 69, 78, 0.10);
+    color: var(--rose);
+    border: 1px solid var(--rose-soft);
+  }
+  .sub-block-title h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--burgundy);
+  }
+  .sub-block-title h4 em {
+    font-style: italic;
+    color: var(--rose);
+    font-weight: 400;
+  }
+  .sub-block.unpleasant .sub-block-title h4 em { color: var(--burgundy-soft); }
+
+  .sub-intro {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 19px;
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+
+  ul.elegant-list {
+    list-style: none;
+    padding: 0;
+  }
+  ul.elegant-list li {
+    padding: 16px 0 16px 38px;
+    border-bottom: 1px dashed var(--line);
+    position: relative;
+    color: var(--ink);
+  }
+  ul.elegant-list li:last-child { border-bottom: none; }
+  ul.elegant-list li::before {
+    content: "\2766";
+    position: absolute;
+    left: 0; top: 14px;
+    color: var(--gold);
+    font-size: 18px;
+  }
+  ul.elegant-list li strong {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--burgundy);
+    font-size: 19px;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* ---------- COMPARISON TABLE ---------- */
+  .compare-section {
+    background: linear-gradient(180deg, var(--cream-soft) 0%, var(--cream) 100%);
+  }
+
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  @media (max-width: 760px) {
+    .compare-grid { grid-template-columns: 1fr; }
+  }
+
+  .compare-card {
+    background: var(--ivory);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 40px 32px;
+    box-shadow: 0 10px 30px rgba(74, 28, 42, 0.05);
+    position: relative;
+    overflow: hidden;
+  }
+  .compare-card .ribbon {
+    position: absolute;
+    top: 18px; right: -36px;
+    background: var(--gold);
+    color: var(--ivory);
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 3px;
+    padding: 4px 40px;
+    transform: rotate(35deg);
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .compare-card.women .ribbon { background: var(--rose); }
+
+  .compare-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--burgundy);
+    margin-bottom: 6px;
+    text-align: center;
+  }
+  .compare-card .compare-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    text-align: center;
+    color: var(--gold);
+    margin-bottom: 28px;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+
+  .need-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .need-row:last-child { border-bottom: none; }
+  .need-icon {
+    flex-shrink: 0;
+    width: 32px; height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(184, 147, 90, 0.12);
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .compare-card.women .need-icon {
+    background: rgba(168, 69, 78, 0.10);
+    color: var(--rose);
+  }
+  .need-row .need-content strong {
+    font-family: 'Playfair Display', serif;
+    color: var(--burgundy);
+    font-weight: 600;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 3px;
+  }
+  .need-row .need-content span {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .insight-banner {
+    margin-top: 50px;
+    background: var(--burgundy);
+    color: var(--ivory);
+    padding: 36px 30px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+  }
+  .insight-banner::before, .insight-banner::after {
+    content: "\2766";
+    position: absolute;
+    color: var(--gold-soft);
+    font-size: 24px;
+    top: 50%; transform: translateY(-50%);
+  }
+  .insight-banner::before { left: 24px; }
+  .insight-banner::after { right: 24px; }
+  .insight-banner p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(20px, 2.4vw, 26px);
+    line-height: 1.55;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .insight-banner strong {
+    color: var(--gold-soft);
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  /* ---------- TIPS ---------- */
+  .tips-section { background: var(--cream); }
+
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+    margin-top: 60px;
+  }
+
+  .tip-card {
+    background: var(--ivory);
+    border: 1px solid var(--line);
+    padding: 36px 28px;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.4s ease;
+  }
+  .tip-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(74, 28, 42, 0.1);
+    border-color: var(--gold);
+  }
+  .tip-number {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 56px;
+    color: var(--gold-soft);
+    line-height: 1;
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+  .tip-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    color: var(--burgundy);
+    margin-bottom: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .tip-card p {
+    font-size: 15.5px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  /* ---------- CLOSING ---------- */
+  .closing-section {
+    background:
+      linear-gradient(rgba(74, 28, 42, 0.85), rgba(74, 28, 42, 0.92)),
+      radial-gradient(circle at 30% 30%, #6E2A3C, transparent 60%),
+      var(--burgundy);
+    color: var(--ivory);
+    text-align: center;
+    padding: 110px 24px;
+  }
+  .closing-section .section-label { color: var(--gold-soft); }
+  .closing-section h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--ivory);
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  .closing-section h2 em {
+    font-style: italic;
+    color: var(--gold-soft);
+    font-weight: 500;
+  }
+  .closing-section .closing-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    line-height: 1.75;
+    max-width: 720px;
+    margin: 0 auto 30px;
+    color: rgba(255, 251, 246, 0.92);
+  }
+  .closing-ornament {
+    color: var(--gold-soft);
+    font-size: 26px;
+    letter-spacing: 12px;
+    margin: 40px 0 30px;
+  }
+  .closing-signature {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold-soft);
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    background: var(--burgundy);
+    color: rgba(255, 251, 246, 0.7);
+    text-align: center;
+    padding: 28px 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-top: 1px solid var(--gold-soft);
+  }
+
+  /* ---------- ANIMATION (progressive, no hidden default) ---------- */
+  .fade-in {
+    animation: gentleFade 1s ease both;
+  }
+  @keyframes gentleFade {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in { animation: none; opacity: 1; transform: none; }
+  }
+
+  @media (max-width: 640px) {
+    section { padding: 60px 18px; }
+    .gender-block { padding: 36px 24px; }
+    .compare-card { padding: 32px 22px; }
+    .insight-banner::before, .insight-banner::after { display: none; }
+    .insight-banner p { padding: 0 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ========== HERO ========== -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Sebuah Esai Asmara</div>
+      <h1>Asmara Wanita &amp; Pria<br><em>Yang Memuaskan dan Yang Meresahkan</em></h1>
+      <div class="hero-divider">
+        <span></span>
+        <span class="ornament">&#10086;</span>
+        <span></span>
+      </div>
+      <p class="lede">
+        Mengupas sisi-sisi asmara yang paling membahagiakan dan paling menyayat hati
+        bagi wanita maupun pria &mdash; sebuah jalan memahami dua hati yang berbeda,
+        namun sama-sama ingin dicintai dengan benar.
+      </p>
+      <a href="#intro" class="hero-cta">Mulai Membaca</a>
+    </div>
+    <div class="scroll-hint">Gulir &darr;</div>
+  </header>
+
+  <!-- ========== NAV ========== -->
+  <nav class="toc">
+    <div class="toc-inner">
+      <a href="#intro">Pengantar</a>
+      <a href="#wanita">Wanita</a>
+      <a href="#pria">Pria</a>
+      <a href="#perbandingan">Perbandingan</a>
+      <a href="#tips">Tips &amp; Saran</a>
+      <a href="#penutup">Penutup</a>
+    </div>
+  </nav>
+
+  <!-- ========== INTRO ========== -->
+  <section id="intro" class="intro-section">
+    <div class="container">
+      <div class="section-label fade-in">Pengantar</div>
+      <h2 class="section-title fade-in">Dua Hati, <em>Satu Bahasa yang Belum Sempurna</em></h2>
+      <div class="section-divider fade-in">
+        <span></span><span class="ornament">&#10086;</span><span></span>
+      </div>
+
+      <p class="intro-quote fade-in">
+        Cinta bukan hanya soal saling memilih, melainkan soal saling memahami apa yang membuat
+        pasangan kita merasa dihargai &mdash; dan apa yang diam-diam melukainya.
+      </p>
+      <div class="intro-attribution fade-in">&mdash; Renungan Asmara</div>
+
+      <p class="body-text fade-in">
+        Setiap hubungan membawa dua dunia yang berbeda. Wanita dan pria kerap tumbuh dengan
+        cara mencintai yang tidak sama, dengan bahasa hati yang tidak selalu bertemu di titik
+        yang sama. Banyak ketegangan dalam asmara tidak lahir karena kurang cinta, melainkan
+        karena salah satu pihak memberikan cinta dengan caranya sendiri, sementara pihak lain
+        menunggu diberi cinta dengan cara yang berbeda.
+      </p>
+      <p class="body-text fade-in">
+        Halaman ini bukan untuk membagi manusia ke dalam dua kotak kaku. Setiap orang unik.
+        Namun pola-pola yang akan dibahas di sini kerap muncul berulang dalam banyak hubungan,
+        dan memahaminya dapat menjadi pintu menuju kedekatan yang lebih dalam, kelembutan yang
+        lebih tulus, dan keintiman yang tidak gampang retak oleh salah paham.
+      </p>
+      <p class="body-text fade-in">
+        Kita akan menyusuri empat hal: apa yang paling menyenangkan bagi wanita, apa yang
+        paling tidak enak dirasakannya; lalu hal yang sama bagi pria. Setelah itu, kita
+        bandingkan kebutuhan emosional keduanya secara berdampingan, dan tutup dengan
+        saran-saran praktis yang dapat dijalankan dalam keseharian.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== WANITA ========== -->
+  <section id="wanita" style="background: var(--cream);">
+    <div class="container">
+      <div class="section-label fade-in">Bagian Satu</div>
+      <h2 class="section-title fade-in">Asmara dari Mata <em>Wanita</em></h2>
+      <div class="section-divider fade-in">
+        <span></span><span class="ornament">&#9792;</span><span></span>
+      </div>
+      <p class="lead fade-in">
+        Bagi banyak wanita, cinta bukan peristiwa besar. Ia adalah rangkaian detail kecil
+        yang membuatnya merasa dilihat, didengar, dan dihargai.
+      </p>
+
+      <div class="gender-block fade-in">
+        <div class="gender-head">
+          <div class="gender-symbol">&#9792;</div>
+          <div>
+            <h3>Dunia Batin Seorang Wanita</h3>
+            <div class="subtitle">Mengapa detail kecil berarti segalanya</div>
+          </div>
+        </div>
+
+        <p class="body-text">
+          Wanita umumnya merasakan hubungan melalui benang-benang halus: nada suara saat
+          pasangan berbicara, ekspresi wajah di sela-sela kata, apakah pesan dibalas cepat
+          atau lambat. Baginya, asmara adalah perasaan &mdash; dan perasaan ini tumbuh atau
+          layu bukan karena kejadian dramatis, melainkan karena serpihan momen sehari-hari.
+        </p>
+
+        <!-- PLEASANT -->
+        <div class="sub-block pleasant">
+          <div class="sub-block-title">
+            <span class="badge">&#10084;</span>
+            <h4>Yang Paling <em>Menyenangkan</em></h4>
+          </div>
+          <p class="sub-intro">
+            Hal-hal yang membuat seorang wanita merasa dicintai dengan segenap hati:
+          </p>
+          <ul class="elegant-list">
+            <li>
+              <strong>Didenarkan dengan Tulus, Bukan Diperbaiki</strong>
+              Saat ia bercerita, ia tidak selalu mencari solusi. Ia mencari kehadiran.
+              Pasangan yang menatap matanya, meletakkan ponsel, dan berkata &ldquo;aku di sini,
+              aku mendengarkan&rdquo; &mdash; itulah bentuk cinta yang paling ia rasakan.
+            </li>
+            <li>
+              <strong>Dihafal dalam Detail Kecil</strong>
+              Ingat nama kucing kecilnya, kesukaan es krimnya, hari ia sedih tanpa harus
+              diberitahu. Mengingat hal-hal yang ia ceritakan sekali saja menandakan:
+              &ldquo;Kamu penting, kata-katamu kusimpan.&rdquo;
+            </li>
+            <li>
+              <strong>Sentuhan Hangat yang Tidak Selalu Seksual</strong>
+              Pelukan dari belakang saat ia memasak, genggaman tangan di jalan, usapan rambut
+              saat ia lelah. Sentuhan non-seksual mengirim pesan: &ldquo;Aku dekat denganmu, bukan
+              karena aku menginginkan tubuhmu, melainkan karena aku ingin dekat denganmu.&rdquo;
+            </li>
+            <li>
+              <strong>Kejutan Kecil yang Menunjukkan Ia Dipikirkan</strong>
+              Bukan hadiah mahal. Sebuah cokelat favorit di hari biasa, pesan selamat pagi
+              yang istimewa, atau surat kecil di saku jaketnya. Yang menyentuh adalah
+              kesadaran: &ldquo;Ia memikirkanku saat aku tidak ada di sisinya.&rdquo;
+            </li>
+            <li>
+              <strong>Merasa Aman Secara Emosional</strong>
+              Bisa menangis tanpa dihakimi, bisa marah tanpa ditakuti, bisa lemah tanpa
+              dianggap lemah. Hubungan di mana ia boleh menjadi dirinya yang paling rapuh
+              adalah hadiah paling mahal baginya.
+            </li>
+            <li>
+              <strong>Diperlakukan sebagai Prioritas, Bukan Opsi</strong>
+              Bukan berarti harus selalu nomor satu di setiap detik, melainkan: ia tahu
+              pasangannya memilihnya, menjaganya, dan tidak menjadikannya sekadar pelengkap
+              hidup. Ia ingin merasa &mdash; bukan sekadar diberitahu &mdash; bahwa ia diutamakan.
+            </li>
+          </ul>
+        </div>
+
+        <!-- UNPLEASANT -->
+        <div class="sub-block unpleasant">
+          <div class="sub-block-title">
+            <span class="badge">&#10007;</span>
+            <h4>Yang Paling <em>Tidak Menyenangkan</em></h4>
+          </div>
+          <p class="sub-intro">
+            Hal-hal yang diam-diam menggerogoti rasa aman dan rasa berharga seorang wanita:
+          </p>
+          <ul class="elegant-list">
+            <li>
+              <strong>Diabaikan Saat Bercerita</strong>
+              Matanya berbinar menceritakan sesuatu, tetapi pasangannya menatap layar ponsel,
+              mengangguk sekadar, atau memotong dengan topik lain. Perasaan yang muncul:
+              &ldquo;Aku tidak penting baginya.&rdquo; Luka ini kecil, tetapi berulang setiap hari.
+            </li>
+            <li>
+              <strong>Solusi Cepat Tanpa Empati</strong>
+              Ia baru saja selesai curhat, pasangan langsung memberi saran logis tanpa
+              bertanya apa yang ia rasakan. Bagi wanita, ini terasa seperti: &ldquo;Perasaanku
+              tidak perlu dipahami, cukup diperbaiki.&rdquo; Padahal ia ingin didengar dulu,
+              bukan dibenarkan.
+            </li>
+            <li>
+              <strong>Diam Mendadak dan Silent Treatment</strong>
+              Pasangan marah lalu menghilang berhari-hari tanpa penjelasan, membiarkan ia
+              menebak-nebak salah apa. Diam yang tidak dijelaskan adalah bentuk kekerasan
+              emosional yang perlahan menghancurkan rasa aman.
+            </li>
+            <li>
+              <strong>Perasaannya Dianggap Berlebihan</strong>
+              &ldquo;Kamu overthinking&rdquo;, &ldquo;kamu lebay&rdquo;, &ldquo;hal sepele kok dibesar-besarkan&rdquo;.
+              Ketika perasaannya diremehkan berkali-kali, ia belajar untuk tidak lagi
+              berbagi. Dan saat ia berhenti berbagi, hubungan mulai mati perlahan.
+            </li>
+            <li>
+              <strong>Tidak Ada Inisiatif, Selalu Pasif</strong>
+              Pasangan yang tidak pernah memutuskan mau makan apa, mau pergi ke mana, mau
+              merayakan apa. Semua beban ada di pundaknya. Lama-lama ia merasa lebih seperti
+              ibu daripada kekasih.
+            </li>
+            <li>
+              <strong>Dibandingkan dengan Wanita Lain</strong>
+              Mantan, teman, selebriti, bahkan tetangga. Setiap perbandingan adalah tamparan
+              halus yang berkata: &ldquo;Kamu tidak cukup.&rdquo; Tidak ada wanita yang dapat
+              bersaing dengan bayangan, dan tidak ada hubungan yang bertahan di atas
+              rasa tidak cukup.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRIA ========== -->
+  <section id="pria" style="background: var(--cream-soft);">
+    <div class="container">
+      <div class="section-label fade-in">Bagian Dua</div>
+      <h2 class="section-title fade-in">Asmara dari Mata <em>Pria</em></h2>
+      <div class="section-divider fade-in">
+        <span></span><span class="ornament">&#9794;</span><span></span>
+      </div>
+      <p class="lead fade-in">
+        Bagi banyak pria, cinta kerap dirasakan bukan melalui kata-kata, melainkan melalui
+        rasa dihargai, dipercaya, dan diberi ruang untuk menjadi dirinya sendiri.
+      </p>
+
+      <div class="gender-block men fade-in">
+        <div class="gender-head">
+          <div class="gender-symbol">&#9794;</div>
+          <div>
+            <h3>Dunia Batin Seorang Pria</h3>
+            <div class="subtitle">Mengapa rasa dihargai berarti segalanya</div>
+          </div>
+        </div>
+
+        <p class="body-text">
+          Pria umumnya tidak terlalu banyak mengurai perasaan dengan kata-kata. Baginya,
+          cinta dirasakan lewat rasa damai di rumah, rasa dihargai atas usahanya, dan rasa
+          dipercaya tanpa harus terus diawasi. Ia ingin merasa cukup &mdash; cukup kuat, cukup
+          mampu, cukup berharga di mata pasangannya. Banyak pria patah bukan karena cintanya
+          ditolak, melainkan karena merasa tak pernah benar di mata pasangannya.
+        </p>
+
+        <!-- PLEASANT -->
+        <div class="sub-block pleasant">
+          <div class="sub-block-title">
+            <span class="badge">&#10084;</span>
+            <h4>Yang Paling <em>Menyenangkan</em></h4>
+          </div>
+          <p class="sub-intro">
+            Hal-hal yang membuat seorang pria merasa dihormati dan dicintai dengan dalam:
+          </p>
+          <ul class="elegant-list">
+            <li>
+              <strong>Dihargai atas Usaha Kecilnya</strong>
+              &ldquo;Terima kasih sudah memperbaiki keran itu&rdquo;, &ldquo;aku tahu kamu lelah pulang kerja
+              hari ini&rdquo;. Apresiasi kecil membuatnya merasa: &ldquo;Aku terlihat. Aku berharga.&rdquo;
+              Banyak pria bekerja sepanjang hidup hanya untuk mendengar kata-kata ini.
+            </li>
+            <li>
+              <strong>Pasangan yang Percaya pada Kemampuannya</strong>
+              Saat ia dihadapkan pada tantangan, pasangannya tidak meragukan, melainkan
+              berkata: &ldquo;Aku tahu kamu bisa.&rdquo; Kepercayaan ini menjadi bahan bakar yang
+              membuatnya rela berjuang mati-matian.
+            </li>
+            <li>
+              <strong>Ketenangan, Bukan Drama</strong>
+              Rumah yang damai, pasangan yang tidak mudah meledak, suasana yang dapat
+              diprediksi &mdash; bagi pria, ini adalah bentuk cinta yang paling ia hargai.
+              Ia rela berkorban banyak asal pulang ke tempat yang membuatnya tenang.
+            </li>
+            <li>
+              <strong>Sentuhan Fisik sebagai Bahasa Cinta</strong>
+              Bagi banyak pria, sentuhan adalah cara merasakan cinta. Bukan hanya dalam
+              konteks seksual, melainkan pelukan spontan, ciuman di dahi, tangan yang
+              dipegang. Tanpa sentuhan, ia merasa seperti sahabat, bukan kekasih.
+            </li>
+            <li>
+              <strong>Diterima Apa Adanya</strong>
+              Tidak terus-menerus dikritik soal cara berpakaian, cara makan, cara bicara.
+              Pasangan yang dapat tersenyum pada kebiasaan-kebiasaannya membuatnya merasa:
+              &ldquo;Aku tidak perlu menjadi orang lain untuk dicintai.&rdquo;
+            </li>
+            <li>
+              <strong>Ruang Pribadi yang Dihormati</strong>
+              Waktu untuk hobi, untuk berteman, untuk sekadar diam sendiri. Ruang ini bukan
+              penolakan, melainkan napas yang ia butuhkan agar dapat kembali dengan lebih
+              utuh. Pasangan yang memberi ruang tanpa cemburu berlebihan adalah anugerah.
+            </li>
+          </ul>
+        </div>
+
+        <!-- UNPLEASANT -->
+        <div class="sub-block unpleasant">
+          <div class="sub-block-title">
+            <span class="badge">&#10007;</span>
+            <h4>Yang Paling <em>Tidak Menyenangkan</em></h4>
+          </div>
+          <p class="sub-intro">
+            Hal-hal yang perlahan mengikis rasa hormat dan keintiman seorang pria:
+          </p>
+          <ul class="elegant-list">
+            <li>
+              <strong>Kritik Terus-Menerus, Terutama soal Hal Kecil</strong>
+              Cara ia memuat piring, cara ia melipat baju, cara ia menyetir. Setiap kritik
+              kecil yang berulang mengirim pesan: &ldquo;Kamu tidak pernah cukup baik.&rdquo;
+              Lama-lama pria berhenti mencoba, karena apa pun yang ia lakukan selalu salah.
+            </li>
+            <li>
+              <strong>Kode-Kodean dan Tebak-Tebakan</strong>
+              &ldquo;Kamu harusnya tahu&rdquo;, padahal ia tidak pernah diberitahu. Pria umumnya
+              kesulitan membaca isyarat halus. Ketika ia gagal menebak dan lalu dihukum,
+              ia merasa dijebak dalam permainan yang tidak bisa dimenangkan.
+            </li>
+            <li>
+              <strong>Dibandingkan dengan Pria Lain</strong>
+              &ldquo;Suami Ani lebih romantis&rdquo;, &ldquo;mantan dulu selalu&hellip;&rdquo;. Perbandingan ini
+              menghantam tepat di pusar rasa harga dirinya. Pria dapat memaafkan banyak hal,
+              tetapi perbandingan seperti ini meninggalkan bekas yang dalam dan lama.
+            </li>
+            <li>
+              <strong>Dianggap Tidak Cukup</strong>
+              Tidak cukup menghasilkan, tidak cukup romantis, tidak cukup perhatian, tidak
+              cukup &mdash; apa pun. Perasaan tidak pernah cukup di mata pasangan adalah racun
+              yang perlahan membunuh keinginannya untuk terus berusaha.
+            </li>
+            <li>
+              <strong>Dramatisasi Berlebih dan Emosi Tidak Stabil</strong>
+              Setiap hal kecil menjadi badai, setiap kesalahpahaman menjadi drama berhari-hari.
+              Bagi pria, ini menguras tenaga dan membuatnya menarik diri. Ia bukan tidak
+              peduli, melainkan kelelahan emosional yang membuatnya memilih diam.
+            </li>
+            <li>
+              <strong>Ruang Pribadi yang Terus Dikusir</strong>
+              Setiap ia butuh waktu sendiri, dianggap tidak sayang. Setiap ia berteman
+              teman lamanya, dianggap mengabaikan keluarga. Tanpa ruang, pria merasa
+              tercekik &mdash; dan cinta yang tercekik perlahan akan mati.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PERBANDINGAN ========== -->
+  <section id="perbandingan" class="compare-section">
+    <div class="container-wide">
+      <div class="section-label fade-in">Bagian Tiga</div>
+      <h2 class="section-title fade-in">Kebutuhan Emosional: <em>Wanita vs Pria</em></h2>
+      <div class="section-divider fade-in">
+        <span></span><span class="ornament">&#10047;</span><span></span>
+      </div>
+      <p class="lead fade-in">
+        Bukan soal siapa yang lebih banyak butuh, melainkan soal &mdash; butuhnya berbeda.
+        Memahami perbedaan ini adalah kunci memberi cinta dengan cara yang benar-benar sampai.
+      </p>
+
+      <div class="compare-grid">
+        <!-- WANITA -->
+        <div class="compare-card women fade-in">
+          <div class="ribbon">Wanita</div>
+          <h4>&#9792; Yang Ia Butuhkan</h4>
+          <div class="compare-sub">enam kebutuhan emosional yang utama</div>
+
+          <div class="need-row">
+            <div class="need-icon">1</div>
+            <div class="need-content">
+              <strong>Didengar dan Dipahami</strong>
+              <span>Bukan sekadar ditanggapi, melainkan benar-benar dipahami perasaannya.</span>
+            </div>
+          </div>
+          <div class="need-row">
+            <div class="need-icon">2</div>
+            <div class="need-content">
+              <strong>Dihargai sebagai Individu</strong>
+              <span>Dilihat sebagai dirinya sendiri, bukan hanya sebagai pasangan atau ibu rumah tangga.</span>
+            </div>
+          </div>
+          <div class="need-row">
+            <div class="need-icon">3</div>
+            <div class="need-content">
+              <strong>Merasa Aman Secara Emosional</strong>
+              <span>Boleh rapuh, boleh marah, tanpa takut ditinggalkan atau dihakimi.</span>
+            </div>
+          </div>
+          <div class="need-row">
+            <div class="need-icon">4</div>
+            <div class="need-content">
+              <strong>Keintiman Emosional</strong>
+              <span>Percakapan mendalam, berbagi mimpi dan ketakutan, merasa dekat di hati.</span>
+            </div>
+          </div>
+          <div class="need-row">
+            <div class="need-icon">5</div>
+            <div class="need-content">
+              <strong>Diprioritaskan</strong>
+              <span>Tahu bahwa ia adalah pilihan, bukan sekadar pelengkap hidup pasangan.</span>
+            </div>
+          </div>
+          <div class="need-row">
+            <div class="need-icon">6</div>
+            <div class="need-content">
+              <strong>Detail Kecil yang Menunjukkan Ia Diingat</strong>
+              <span>Kesukaan, hari penting, momen kecil &mdash; tanda ia selalu di hati.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRIA -->
+        <div class="compare-card men fade-in">
+          <div class="ribbon">Pria</div>
+          <h4>&#9794; Yang Ia Butuhkan</h4>
+          <div class="compare-sub">enam kebutuhan emosional yang utama</div>
+
+          <div class="need-row">
+            <div class="need-icon">1</div>
+            <div class="need-content">
+              <strong>Dihargai atas Usahanya</strong>
+              <span>Pengakuan atas kerja keras, baik besar maupun kecil &mdash; bahan bakar baginya.</span>
+            </div>
+          </div>
+          <div class="need-row">
+            <div class="need-icon">2</div>
+            <div class="need-content">
+              <strong>Dipercaya tanpa Diawasi</strong>
+              <span>Kepercayaan utuh bahwa ia mampu dan dapat diandalkan.</span>
+            </div>
+          </div>
+          <div class="need-row">
+            <div class="need-icon">3</div>
+            <div class="need-content">
+              <strong>Diterima Apa Adanya</strong>
+              <span>Tidak terus dikritik, tidak terus &ldquo;diperbaiki&rdquo; menjadi versi lain.</span>
+            </div>
+          </div>
+          <div class="need-row">
+            <div class="need-icon">4</div>
+            <div class="need-content">
+              <strong>Keintiman Fisik</strong>
+              <span>Sentuhan, pelukan, kelekatan tubuh &mdash; bahasa cintanya yang paling asli.</span>
+            </div>
+          </div>
+          <div class="need-row">
+            <div class="need-icon">5</div>
+            <div class="need-content">
+              <strong>Ruang Pribadi yang Dihormati</strong>
+              <span>Waktu untuk hobi, teman, kesunyian &mdash; napas yang ia butuhkan.</span>
+            </div>
+          </div>
+          <div class="need-row">
+            <div class="need-icon">6</div>
+            <div class="need-content">
+              <strong>Ketenangan dan Kepastian</strong>
+              <span>Rumah yang damai, suasana yang dapat diprediksi, tanpa drama berkepanjangan.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="insight-banner fade-in">
+        <p>
+          Wanita umumnya ingin <strong>didengar dan dipahami</strong>, pria umumnya ingin
+          <strong>dihargai dan dipercaya</strong>. Jika kedua kebutuhan ini dipenuhi saling-mengisi,
+          asmara tidak lagi sekadar bertahan &mdash; ia tumbuh.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TIPS ========== -->
+  <section id="tips" class="tips-section">
+    <div class="container-wide">
+      <div class="section-label fade-in">Bagian Empat</div>
+      <h2 class="section-title fade-in">Tips &amp; <em>Saran Praktis</em></h2>
+      <div class="section-divider fade-in">
+        <span></span><span class="ornament">&#10086;</span><span></span>
+      </div>
+      <p class="lead fade-in">
+        Memahami adalah separuh jalan. Separuh lainnya adalah menerjemahkan pemahaman itu
+        menjadi kebiasaan-kebiasaan kecil yang dijalankan setiap hari.
+      </p>
+
+      <div class="tips-grid">
+        <div class="tip-card fade-in">
+          <div class="tip-number">I</div>
+          <h4>Pelajari Bahasa Cinta Pasangan</h4>
+          <p>
+            Apakah ia merasa dicintai lewat kata-kata, waktu berkualitas, hadiah, bantuan,
+            atau sentuhan? Berikan cinta dengan bahasa yang ia pahami, bukan bahasa yang
+            kamu sukai. Ini perbedaan kecil yang mengubah segalanya.
+          </p>
+        </div>
+
+        <div class="tip-card fade-in">
+          <div class="tip-number">II</div>
+          <h4>Jangan Tebak-Tebakan, Komunikasikan</h4>
+          <p>
+            Kebutuhan yang tidak diucapkan tidak akan terpenuhi. Sampaikan dengan lembut
+            apa yang kamu butuhkan, dan tanyakan apa yang pasangan butuhkan. Hubungan
+            dewasa dibangun di atas kejujuran, bukan membaca pikiran.
+          </p>
+        </div>
+
+        <div class="tip-card fade-in">
+          <div class="tip-number">III</div>
+          <h4>Apresiasi Kecil Setiap Hari</h4>
+          <p>
+            &ldquo;Terima kasih&rdquo;, &ldquo;aku bangga padamu&rdquo;, &ldquo;kamu berhasil hari ini&rdquo;.
+            Kalimat-kalimat sederhana ini lebih kuat daripada hadiah mahal yang diberikan
+            setahun sekali. Apresiasi harian adalah pupuk hubungan.
+          </p>
+        </div>
+
+        <div class="tip-card fade-in">
+          <div class="tip-number">IV</div>
+          <h4>Jaga Sentuhan Non-Seksual Tetap Hangat</h4>
+          <p>
+            Genggaman tangan di jalan, pelukan sebelum berangkat kerja, ciuman di dahi
+            sebelum tidur. Sentuhan-sentuhan kecil ini menjaga api keintiman menyala,
+            jauh di luar kamar tidur.
+          </p>
+        </div>
+
+        <div class="tip-card fade-in">
+          <div class="tip-number">V</div>
+          <h4>Beri Ruang, Jangan Kurung</h4>
+          <p>
+            Cinta yang sehat memberi pasangan ruang untuk bernapas, bukan untuk menjauh,
+            melainkan untuk kembali dengan lebih utuh. Ruang adalah napas, dan napas yang
+            sehat membuat cinta bertahan lama.
+          </p>
+        </div>
+
+        <div class="tip-card fade-in">
+          <div class="tip-number">VI</div>
+          <h4>Selesaikan Hari Itu Juga</h4>
+          <p>
+            Jangan tidur dalam kemarahan, kata pepatah. Konflik yang diselesaikan di hari
+            yang sama tidak sempat menjadi luka. Konflik yang dipendam berhari-hari
+            akhirnya menjadi tembok di antara dua hati.
+          </p>
+        </div>
+
+        <div class="tip-card fade-in">
+          <div class="tip-number">VII</div>
+          <h4>Jangan Pernah Bandingkan</h4>
+          <p>
+            Tidak ada hubungan yang sama, tidak ada pasangan yang sama. Perbandingan
+            dengan mantan, teman, atau figur media sosial hanya meracuni keunikan yang
+            kamu berdua miliki. Hargai apa yang ada, bukan yang tidak ada.
+          </p>
+        </div>
+
+        <div class="tip-card fade-in">
+          <div class="tip-number">VIII</div>
+          <h4>Investasi Waktu Berkualitas, Bukan Sekadar Kuantitas</h4>
+          <p>
+            Sejam penuh perhatian lebih berharga daripada seharian bersama tetapi
+            terpisah oleh layar. Waktu berkualitas adalah sepenuh hadir, dengan mata
+            menatap mata dan hati mendengar hati.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PENUTUP ========== -->
+  <section id="penutup" class="closing-section">
+    <div class="container">
+      <div class="section-label fade-in">Penutup</div>
+      <h2 class="fade-in">Cinta yang <em>Bertumbuh</em>, Bukan Sekadar Bertahan</h2>
+      <div class="section-divider fade-in" style="margin: 18px auto 40px;">
+        <span></span><span class="ornament" style="color: var(--gold-soft);">&#10086;</span><span></span>
+      </div>
+      <p class="closing-text fade-in">
+        Asmara yang indah bukan asmara tanpa luka. Ia adalah asmara di mana kedua pihak
+        belajar melukis dengan lebih hati-hati setiap hari &mdash; wanita belajar menerima
+        pria sebagaimana adanya, pria belajar mendengar wanita sebagaimana ia merasa.
+        Tidak ada yang lebih dahulu dewasa; keduanya tumbuh bersama.
+      </p>
+      <p class="closing-text fade-in">
+        Yang paling menyenangkan dalam asmara adalah rasa dilihat, diterima, dan dihargai
+        apa adanya. Yang paling tidak menyenangkan adalah rasa diabaikan, dibandingkan,
+        dan tidak pernah cukup. Memahami kedua sisi ini &mdash; bagi wanita maupun pria &mdash;
+        adalah jalan menuju cinta yang tidak gampang retak.
+      </p>
+      <div class="closing-ornament fade-in">&#10086; &#10086; &#10086;</div>
+      <div class="closing-signature fade-in">&mdash; Sebuah Renungan Asmara &mdash;</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; Asmara Wanita &amp; Pria &mdash; Esai tentang Cinta yang Lebih Dipahami
+  </footer>
+
+</div>
+
+<script>
+  // Smooth scroll for anchor links
+  document.querySelectorAll('.toc a, .hero-cta').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      var href = a.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        var target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>
